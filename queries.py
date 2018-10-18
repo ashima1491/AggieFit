@@ -135,13 +135,14 @@ for x in cur:
 #### have activity duration in their data, you can report their total activity duration as 0. 
 
 cur = collection.find({"activityDuration":{"$gte":0}})
+print("UID  : SUM")
 for i in cur:
 	sum=0
 	for j in i["activityDuration"]:
 		sum = sum + j;
 	name = i["uid"]	
-	print(name)
-	print(sum)	
+	print(str(name)+" : "+str(sum) )
+	
 	
 cur1 = collection.find({"activityDuration":{"$exists": False}})
 for i in cur1:
@@ -149,8 +150,7 @@ for i in cur1:
 	
 		
 	name = i["uid"]	
-	print(name)
-	print(sum)	
+	print(str(name)+" : "+str(sum) )
 	
 # 	pprint.pprint(duration)
 		
