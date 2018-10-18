@@ -18,116 +18,116 @@ collection = connectMongo()
 
 #####Insert documents of dummy-fitness.json######
 #WQ1
-# collection.insert_many([{
-# 		"uid": 1004,
-# 		"age": 45,
-# 		"height": "5ft1in",
-# 		"weight": "160lbs",
-# 		"activityDuration": [67, 48, 56, 15, 57, 20, 57, 15, 60, 10, 4, 3, 89],
-# 		"goal": {
-# 			"activityGoal": "60min",
-# 			"stepGoal": 0,
-# 			"weekGoal": 3
-# 		},
-# 		"tags": ["irregular", "activityOnly"]
-# 	},
-# 	{
-# 		"uid": 1005,
-# 		"activityDuration": [56, 62, 48, 54],
-# 		"stepCount": [6792, 7832, 5876, 6453],
-# 		"age": 50,
-# 		"gender": "male",
-# 		"goal": {
-# 			"activityGoal": "45min",
-# 			"stepGoal": 8000,
-# 			"weekGoal": 3
-# 		},
-# 		"tags": ["active"]
-# 	},
-# 	{
-# 		"uid": 1006,
-# 		"stepCount": [7694, 4568, 2390, 6738, 1243, 132, 6785],
-# 		"goal": {
-# 			"activityGoal": "NA",
-# 			"stepGoal": 5000,
-# 			"weekGoal": 7
-# 		},
-# 		"tags": ["irregular", "stepOnly"]
-# 	},
-# 	{
-# 		"uid": 1007,
-# 		"activityDuration": [23, 14, 32, 12, 19, 32],
-# 		"stepCount": [543, 534, 231, 234, 241],
-# 		"goal": {
-# 			"activityGoal": "30min",
-# 			"stepGoal": 1000,
-# 			"weekGoal": 7
-# 		},
-# 		"tags": ["beginner"]
-# 	},
-# 	{
-# 		"uid": 1008,
-# 		"activityDuration": [72, 75, 78, 45, 79, 86],
-# 		"stepCount": [10439, 10456, 10458, 3423, 10807, 11232],
-# 		"gymDuration": [62, 61, 64, 0, 67, 69],
-# 		"height": "5ft10in",
-# 		"weight": "178lbs",
-# 		"goal": {
-# 			"activityGoal": "90min",
-# 			"stepGoal": 12000,
-# 			"weekGoal": 5
-# 		},
-# 		"competitors": [1009],
-# 		"tags": ["regular", "sportsman", "gymGoer", "competitor"]
-# 	},
-# 	{
-# 		"uid": 1009,
-# 		"activityDuration": [73, 68, 83, 79, 34, 86],
-# 		"stepCount": [10439, 10216, 11342, 11278, 4323, 11762],
-# 		"gymDuration": [60, 58, 64, 62, 0, 64],
-# 		"height": "5ft8in",
-# 		"weight": "183lbs",
-# 		"goal": {
-# 			"activityGoal": "90min",
-# 			"stepGoal": 12000,
-# 			"weekGoal": 5
-# 		},
-# 		"competitors": [1008],
-# 		"tags": ["regular", "sportsman", "gymGoer", "competitor"]
-# 	}
-# ]) 
+collection.insert_many([{
+ 		"uid": 1004,
+ 		"age": 45,
+ 		"height": "5ft1in",
+ 		"weight": "160lbs",
+ 		"activityDuration": [67, 48, 56, 15, 57, 20, 57, 15, 60, 10, 4, 3, 89],
+ 		"goal": {
+ 			"activityGoal": "60min",
+ 			"stepGoal": 0,
+ 			"weekGoal": 3
+ 		},
+ 		"tags": ["irregular", "activityOnly"]
+ 	},
+ 	{
+ 		"uid": 1005,
+ 		"activityDuration": [56, 62, 48, 54],
+ 		"stepCount": [6792, 7832, 5876, 6453],
+ 		"age": 50,
+ 		"gender": "male",
+ 		"goal": {
+ 			"activityGoal": "45min",
+ 			"stepGoal": 8000,
+ 			"weekGoal": 3
+ 		},
+ 		"tags": ["active"]
+ 	},
+ 	{
+ 		"uid": 1006,
+ 		"stepCount": [7694, 4568, 2390, 6738, 1243, 132, 6785],
+ 		"goal": {
+ 			"activityGoal": "NA",
+ 			"stepGoal": 5000,
+ 			"weekGoal": 7
+ 		},
+ 		"tags": ["irregular", "stepOnly"]
+ 	},
+ 	{
+ 		"uid": 1007,
+ 		"activityDuration": [23, 14, 32, 12, 19, 32],
+ 		"stepCount": [543, 534, 231, 234, 241],
+ 		"goal": {
+ 			"activityGoal": "30min",
+ 			"stepGoal": 1000,
+ 			"weekGoal": 7
+ 		},
+ 		"tags": ["beginner"]
+ 	},
+ 	{
+ 		"uid": 1008,
+ 		"activityDuration": [72, 75, 78, 45, 79, 86],
+ 		"stepCount": [10439, 10456, 10458, 3423, 10807, 11232],
+ 		"gymDuration": [62, 61, 64, 0, 67, 69],
+ 		"height": "5ft10in",
+ 		"weight": "178lbs",
+ 		"goal": {
+ 			"activityGoal": "90min",
+ 			"stepGoal": 12000,
+ 			"weekGoal": 5
+ 		},
+ 		"competitors": [1009],
+ 		"tags": ["regular", "sportsman", "gymGoer", "competitor"]
+ 	},
+ 	{
+ 		"uid": 1009,
+ 		"activityDuration": [73, 68, 83, 79, 34, 86],
+ 		"stepCount": [10439, 10216, 11342, 11278, 4323, 11762],
+ 		"gymDuration": [60, 58, 64, 62, 0, 64],
+ 		"height": "5ft8in",
+ 		"weight": "183lbs",
+ 		"goal": {
+ 			"activityGoal": "90min",
+ 			"stepGoal": 12000,
+ 			"weekGoal": 5
+ 		},
+ 		"competitors": [1008],
+ 		"tags": ["regular", "sportsman", "gymGoer", "competitor"]
+ 	}
+ ]) 
 
 
 #########################################################################
 #### Update the database with data from user1001-new.json#####
 #WQ2
-# collection.find_one_and_update({"uid": 1001}, 
-#                                  {"$set": { "height": "5ft10in",
-#   										 	"weight": "190lbs",
-#     										"tags": ["ambitious"]
-#     										}
-# 								})
+collection.find_one_and_update({"uid": 1001}, 
+                                  {"$set": { "height": "5ft10in",
+   										 	"weight": "190lbs",
+     										"tags": ["ambitious"]
+     										}
+ 								})
 
 #########################################################################
 
 ####RQ1. Count the number of employees whose data is in the AggieFit database.
 
-# print(collection.estimated_document_count())
+print(collection.estimated_document_count())
 
 #########################################################################
 
 ####RQ2. Retrieve employees who have been tagged as "irregular".
-# cur = collection.find({"tags":"irregular"})
-# for x in cur:
-# 	pprint.pprint(x)
+cur = collection.find({"tags":"irregular"})
+for x in cur:
+	pprint.pprint(x)
 
 
 ##########################################################################
 
 ####RQ3. Retrieve employees that have a goal step count less than or equal to 1500 steps
-# cur = collection.find({"goal.stepGoal":{"$lte":15000}})
-# for x in cur:
-# 	pprint.pprint(x)
+cur = collection.find({"goal.stepGoal":{"$lte":15000}})
+for x in cur:
+	pprint.pprint(x)
 
 ##########################################################################
 
