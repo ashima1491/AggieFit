@@ -14,10 +14,10 @@ topic = "";
 
 while True:
     try:
-        if subscribing:
-            print("Sub")
-            for item in r.listen():    
-                print(item)
+#         if subscribing:
+#             print("Sub")
+#             for item in p.listen():    
+#                 print(item)
 
         cmd = input('Enter your command: ')
         print(cmd)
@@ -28,7 +28,7 @@ while True:
             r.set(cmd_parts[1], to_set)
         elif cmd_parts[0] == "get":
             res = r.get(cmd_parts[1]) 
-            print(res)
+            print(res)  
         elif cmd_parts[0] == "pub":
             to_pub = ' '.join(cmd_parts[2:])
             res = r.publish(cmd_parts[1], to_pub) 
@@ -42,7 +42,11 @@ while True:
             break;
         else:
             print("Input format wrong");
-
+            
+        if subscribing:
+            print("Sub")
+            for item in p.listen():    
+                print(item)
     except KeyboardInterrupt:
         subscribing = False
 
