@@ -9,6 +9,7 @@ Created on Oct 28, 2018
 @author: sharm
 '''
 import redis
+import time
 import database_crud
 dir(redis)
 
@@ -57,10 +58,18 @@ while True:
             
         if subscribing:
             print("Sub")
-            for item in p.listen():    
-                print(item)
+            try:
+                  for item in p.listen():    
+                   print(item);
+                   #time.sleep(100);
+            except KeyboardInterrupt:
+                    p.unsubscribe([channel])
+                    print("interrupted")
+                    subscribing = False;
+                    break;
     except KeyboardInterrupt:
-        subscribing = False
+        subscribing = False;
+        break;
 
 
     
