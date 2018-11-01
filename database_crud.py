@@ -1,18 +1,22 @@
 import mongo_connect
 import os
 from builtins import str
+from _ast import Str
+import string
 
 def getRecords(collection_name):
 
-    
-    db = mongo_connect.connectMongo()
-    collection = db[collection_name]
-    message = collection.find()
-    
-    for x in message:
-        print(x)
+    try:
+        db = mongo_connect.connectMongo()
+        collection = db[collection_name]
+        message = collection.find()
+        
+        for x in message:
+            print(x)
+            
                           
-
+    except Exception as e:
+        print(e)        
                     
   
 
@@ -31,7 +35,7 @@ def insertRecords(collection_name,value):
        
     
     except Exception as e:
-        print('Invalid content. One or more parameters not found. Please check the log file')
+        print('Invalid content.')
         print(e)
         
 
